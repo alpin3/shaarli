@@ -1,7 +1,7 @@
 FROM alpin3/php-apache
 MAINTAINER kost - https://github.com/kost
 
-ENV SHAARLI_VERSION=0.7.0 \
+ENV SHAARLI_VERSION=0.8.0 \
     SHAARLI_PKG=shaarli.tgz
 
 RUN apk --update --no-cache add wget ca-certificates php5-zlib \
