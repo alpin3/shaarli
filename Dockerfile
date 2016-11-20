@@ -17,3 +17,5 @@ RUN apk --update --no-cache add wget ca-certificates php5-zlib php5-dom \
     && echo "Success"
 
 ADD scripts/ /scripts
+VOLUME ["/php/data"]
+
