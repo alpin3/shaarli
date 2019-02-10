@@ -4,7 +4,7 @@ MAINTAINER kost - https://github.com/kost
 ENV SHAARLI_VERSION=0.10.2 \
     SHAARLI_PKG=shaarli.tgz
 
-RUN apk --update --no-cache add wget ca-certificates php-zlib php-dom \
+RUN apk --update --no-cache add wget ca-certificates php-zlib php-dom php-curl php-simplexml \
     && mkdir /php \
     && cd /php \
     && wget -O /tmp/$SHAARLI_PKG https://github.com/shaarli/Shaarli/archive/v$SHAARLI_VERSION.tar.gz \
